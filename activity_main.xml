@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Background ImageView for dynamic weather backgrounds -->
+    <ImageView
+        android:id="@+id/weatherBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/weather1"
+        />
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_default" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Forecasting App"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="52sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#8DCAD1"
+        android:hint="Enter City:"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="SEARCH"
+        android:textSize="20sp"
+        android:background="#E7F089" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="#B6C6C8"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
